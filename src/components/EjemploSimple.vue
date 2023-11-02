@@ -10,7 +10,6 @@
 </template>
 
 <style scoped>
-
 div.ejemplo {
     padding: 5px;
     margin: 10px;

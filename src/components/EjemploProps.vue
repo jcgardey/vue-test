@@ -1,14 +1,10 @@
-<script setup>
-    defineProps(['texto'])
-</script>
+<script setup> 
+	defineProps(['nombre', 'descripcion']);
+</script>	
+
 <template>
-    <div class="ejemplo">
-        <p>{{ texto }}</p>
-    </div>
+	<h2>{{ nombre }}</h2>
+	<p>{{ descripcion }}</p>
 </template>
 
-<style>
-    div.ejemplo {
-        background-color: rgb(192, 192, 192);
-    }
-</style>
+
