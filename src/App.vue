@@ -6,18 +6,19 @@
     import ToDo from './components/ToDo.vue';
     import EjemploProps from './components/EjemploProps.vue';
     import Card from './components/Card.vue';
+import Navegacion from './components/Navegacion.vue';
 </script>
 
 <template>
-  <Card>
-    <p>Ejemplo de card</p>
-  </Card>
-
-  <Card>
-    <h3>Otro ejemplo de card</h3>
-  </Card>
+  <div class="container">
+    <Navegacion />
+    <RouterView /> <!-- Muestra el componente que coincida con la ruta del navegador | ver router/index.js -->
+  </div>
 </template>
 
 <style scoped>
-
+  div.container {
+        width: 50%;
+        margin: 10px auto;
+    }
 </style>

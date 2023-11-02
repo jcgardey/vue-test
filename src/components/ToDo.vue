@@ -12,8 +12,7 @@ import { ref } from 'vue';
 
 </script>
 
-<template>
-    <div class="container">
+<template> 
         <h1>ToDo Items</h1>
         <form v-on:submit.prevent="crearItem">
             <div class="form-group">
@@ -29,15 +28,10 @@ import { ref } from 'vue';
                 <p class="item-nombre">{{ item }}</p>
             </div>
         </div>
-    </div>
+ 
 </template>
 
 <style scoped>
-    div.container {
-        width: 40%;
-        margin: 10px auto;
-    }
-
     form {
         margin: 10px;
     }
